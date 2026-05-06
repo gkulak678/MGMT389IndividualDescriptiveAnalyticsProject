@@ -487,7 +487,7 @@ metric_cols[4].metric("Avg Days to Close", f"{kpis['avg_days']:.1f}" if not pd.i
 # -----------------------------
 # Tabs
 # -----------------------------
-tab_overview, tab_team, tab_agent, tab_product, tab_trends, tab_segments, tab_data, tab_prompt = st.tabs(
+tab_overview, tab_team, tab_agent, tab_product, tab_trends, tab_segments, tab_data = st.tabs(
     [
         "1. Executive Overview",
         "2. Team Performance",
@@ -496,7 +496,6 @@ tab_overview, tab_team, tab_agent, tab_product, tab_trends, tab_segments, tab_da
         "5. Quarterly Trends",
         "6. Account Segments",
         "7. Data Explorer",
-        "8. Prompt + Deployment Notes",
     ]
 )
 
